@@ -8,3 +8,23 @@
   overflow: hidden;
   isolation: isolate;
 }
+
+.cursor-aura {
+  position: absolute;
+  background: radial-gradient($gradient-highlight, $gradient-dark);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: opacity 250ms linear;
+  z-index: 0;
+  filter: blur(20px);
+}
+
+.banner-tile {
+  position: absolute;
+  background-color: $primary-color;
+  width: 44px;
+  height: 44px;
+  margin: 3px;
+  z-index: 1;
+}
