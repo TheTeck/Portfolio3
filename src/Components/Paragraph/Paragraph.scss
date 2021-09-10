@@ -1,0 +1,10 @@
+@import "../../Scss/colors";
+@import "../../Scss/fonts";
+
+.paragraph-container {
+  margin: 0 30px;
+  text-align: justify;
+  color: $text-dark;
+  font-size: $medium-text;
+  font-family: $primary-font;
+}

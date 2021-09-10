@@ -5,6 +5,7 @@
   height: 100%;
   width: 400px;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .profileimage-container {
@@ -35,7 +36,7 @@
 .image-label {
   position: absolute;
   background-color: $primary-color;
-  color: $text-light;
+  color: $secondary-color;
   font-size: $big-text;
   font-weight: 700;
   font-family: $primary-font;
