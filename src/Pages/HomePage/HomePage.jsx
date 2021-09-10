@@ -14,7 +14,7 @@ export default function HomePage (props) {
                 <div className="profile-wrapper">
                     <ProfileImage />
                     <Paragraph>
-                        I AM A FULL-STACK WEB DEVELOPER OUT OF THE SAN FRANCISCO BAY AREA - DETERMINED TO BRING UNIQUE EXPERIENCES FOR USERS THROUGH OUT-OF-THE-BOX SOLUTIONS. WITH A BACKGROUND IN MUSIC COMPOSITION AND HANDCRAFTING CLASSICAL GUITARS, I STRIVE TO IMPLEMENT AS MUCH ARTISTRY IN MY PROJECTS AS I CAN.
+                        I am a full-stack web developer out of the San Francisco Bay Area. Some of my greatest passions in life revolve around creating beautifully designed products that people enjoy using. Recently, I have transitioned from making physical, hand-crafted instruments to software engineering, because, in the digital space, I am only limited by my creativity and skills and with enough effort anything can be achieved. Now, I am looking for a position within a team where I can help create applications that people will love to use and, hopefully, help them achieve betterment in life.
                     </Paragraph>
                 </div>
             </ContentContainer>
