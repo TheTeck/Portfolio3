@@ -8,5 +8,6 @@
   border-radius: 50%;
   transition: opacity 250ms linear;
   z-index: 0;
+  -webkit-filter: blur(20px);
   filter: blur(20px);
 }

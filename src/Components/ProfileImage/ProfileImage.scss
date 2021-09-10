@@ -1,0 +1,46 @@
+@import "../../Scss/colors";
+@import "../../Scss/fonts";
+
+.profile-container {
+  height: 100%;
+  width: 400px;
+  position: relative;
+}
+
+.profileimage-container {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  border-radius: 100px 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 400px;
+    height: 400px;
+    transition: all 200ms linear;
+  }
+
+  img:hover {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+.image-label {
+  position: absolute;
+  background-color: $primary-color;
+  color: $text-light;
+  font-size: $big-text;
+  font-weight: 700;
+  font-family: $primary-font;
+  padding: 0.6em 0.9em;
+  border-radius: 30px 15px;
+  bottom: -20px;
+  right: -20px;
+}
