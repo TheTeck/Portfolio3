@@ -1,0 +1,24 @@
+@import "../../Scss/colors";
+@import "../../Scss/fonts";
+
+.bannerheader-container {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 10%;
+  font-family: $primary-font;
+}
+
+.bannerheader-container > * {
+  margin: 0;
+}
+
+.bannerheader-container > h1 {
+  color: $secondary-color;
+  font-size: $largest-text;
+}
+
+.bannerheader-container > h2 {
+  color: $text-light;
+  font-size: $big-text;
+}
