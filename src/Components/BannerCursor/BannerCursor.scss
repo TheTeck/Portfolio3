@@ -1,0 +1,12 @@
+@import "../../Scss/colors";
+
+.cursor-aura {
+  position: absolute;
+  background: radial-gradient($gradient-highlight, $gradient-dark);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: opacity 250ms linear;
+  z-index: 0;
+  filter: blur(20px);
+}

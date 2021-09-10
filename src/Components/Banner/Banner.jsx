@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import BannerCursor from '../BannerCursor/BannerCursor';
+import BannerHeader from '../BannerHeader/BannerHeader';
 import './Banner.scss';
 
 export default function Banner (props) {
@@ -24,7 +26,7 @@ export default function Banner (props) {
 
     function populateBannerTileArray (screenWidth) {
         const tileSize = 50;
-        const bannerHeight = 400;
+        const bannerHeight = 300;
         const newTileLayout = [];
 
         for (let i = 0; i < bannerHeight; i += tileSize) {
@@ -48,14 +50,9 @@ export default function Banner (props) {
             onMouseMove={handleCursorMovement}
             onMouseLeave={handleHideCursor}
         >
-            <div
-                className="cursor-aura"
-                style={{
-                    left: cursorX - 150,
-                    top: cursorY - 150,
-                    opacity: cursorOpacity
-                }}
-            ></div>
+            <BannerCursor x={cursorX} y={cursorY} opacity={cursorOpacity} />
+
+            <div className="banner-highlight"></div>
 
             {
                 bannerTiles.map((tile, index) => {
@@ -71,6 +68,8 @@ export default function Banner (props) {
                     )
                 })
             }
+
+            <BannerHeader />
         </div>
     )
 }
