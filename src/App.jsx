@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import HomePage from './Pages/HomePage/HomePage';
+import PuzzlePage from './Pages/PuzzlePage/PuzzlePage';
+import MusicPage from './Pages/MusicPage/MusicPage';
 import './App.scss';
 
 function App() {
@@ -11,6 +13,12 @@ function App() {
       <Switch>
         <Route exact path="/home">
           <HomePage />
+        </Route>
+        <Route exact path="/puzzle">
+          <PuzzlePage />
+        </Route>
+        <Route exact path="/music">
+          <MusicPage />
         </Route>
         <Route exact path="/">
           <HomePage />
