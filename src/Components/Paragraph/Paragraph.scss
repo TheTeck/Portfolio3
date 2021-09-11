@@ -9,3 +9,9 @@
   font-family: $primary-font;
   pointer-events: none;
 }
+
+@media (min-width: 1200px) {
+  .paragraph-container {
+    font-size: $medium-big-text;
+  }
+}

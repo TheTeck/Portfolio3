@@ -1,5 +1,9 @@
 @import "./Scss/colors";
 
+:root {
+  font-size: 16px;
+}
+
 .app {
   background-color: $secondary-color;
   width: 100vw;
