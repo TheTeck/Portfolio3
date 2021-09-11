@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import BannerCursor from '../BannerCursor/BannerCursor';
 import BannerHeader from '../BannerHeader/BannerHeader';
@@ -38,9 +38,19 @@ export default function Banner (props) {
         setBannerTiles(newTileLayout);
     }
 
-    useLayoutEffect(() => {
+    function updateScreenWidth () {
+        setScreenWidth(window.innerWidth);
+    }
+
+    useEffect(() => {
+        updateScreenWidth();
+    }, [])
+
+    useEffect(() => {
         populateBannerTileArray(screenWidth);
     }, [screenWidth])
+
+    
 
     window.addEventListener("resize", () => {
         setScreenWidth(window.innerWidth !== screenWidth ? window.innerWidth : screenWidth);
@@ -71,7 +81,7 @@ export default function Banner (props) {
                 })
             }
 
-            <BannerHeader />
+            <BannerHeader main={props.main} sub={props.sub} />
         </div>
     )
 }

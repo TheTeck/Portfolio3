@@ -5,8 +5,10 @@ import './BannerHeader.scss';
 export default function BannerHeader (props) {
     return (
         <div className="bannerheader-container">
-            <h1>John Teckemeyer</h1>
-            <h2>Full Stack Web Development</h2>
+            <h1>{props.main}</h1>
+            { 
+                props.sub ? <h2>{props.sub}</h2> : <></>
+            }
         </div>
     )
 }

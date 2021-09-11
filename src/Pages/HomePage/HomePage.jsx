@@ -13,18 +13,20 @@ export default function HomePage (props) {
         justpuzzles: {
             name: "Just Puzzles",
             image: "polygonpuzzle.png",
-            link: "/puzzle"
+            link: "/puzzle",
+            alt: "Polygonal puzzle scattered in pieces"
         },
         sheetmusic: {
             name: "Sheet Music Maker",
             image: "sheetmusic.png",
-            link: "/music"
+            link: "/music",
+            alt: "First page of some sheet music in the editor"
         }
     }
 
     return (
         <div className="homepage-container">
-            <Banner />
+            <Banner main="John Teckemeyer" sub="Full Stack Web Development" />
             <ContentContainer>
                 <div className="section-wrapper">
                     <ProfileImage />
