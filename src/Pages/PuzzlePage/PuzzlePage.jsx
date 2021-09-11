@@ -2,6 +2,7 @@ import React from 'react';
 
 import ContentContainer from '../../Components/ContentContainer/ContentContainer';
 import ProjectNav from '../../Components/ProjectNav/ProjectNav';
+import Banner from '../../Components/Banner/Banner';
 import './PuzzlePage.scss';
 
 export default function PuzzlePage (props) {
@@ -13,8 +14,8 @@ export default function PuzzlePage (props) {
 
     return (
         <div className="puzzlepage-container">
+            <Banner main="Just Puzzles" />
             <ContentContainer>
-                <h1>Just Puzzles</h1>
                 <ProjectNav links={links} />
             </ContentContainer>
         </div>
