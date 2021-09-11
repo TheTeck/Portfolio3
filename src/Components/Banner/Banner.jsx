@@ -9,7 +9,6 @@ export default function Banner (props) {
     const [cursorX, setCursorX] = useState(null);
     const [cursorY, setCursorY] = useState(null);
     const [cursorOpacity, setCursorOpacity] = useState(0);
-    const [windowWidth, setWindowWidth] = useState(0);
     const [bannerTiles, setBannerTiles] = useState([]);
 
     // Update state to show aura behind cursor
@@ -38,10 +37,7 @@ export default function Banner (props) {
     }
 
     useEffect(() => {
-        if (windowWidth !== window.innerWidth) {
-            setWindowWidth(window.innerWidth);
-            populateBannerTileArray(window.innerWidth);
-        }
+        populateBannerTileArray(window.innerWidth);
     })
 
     return (
