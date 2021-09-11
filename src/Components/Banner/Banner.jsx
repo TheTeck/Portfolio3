@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 
 import BannerCursor from '../BannerCursor/BannerCursor';
 import BannerHeader from '../BannerHeader/BannerHeader';
@@ -10,6 +10,7 @@ export default function Banner (props) {
     const [cursorY, setCursorY] = useState(null);
     const [cursorOpacity, setCursorOpacity] = useState(0);
     const [bannerTiles, setBannerTiles] = useState([]);
+    const [screenWidth, setScreenWidth] = useState(0);
 
     // Update state to show aura behind cursor
     function handleCursorMovement(e) {
@@ -23,6 +24,7 @@ export default function Banner (props) {
         setCursorOpacity(0);
     }
 
+    // Fill array with coordinates for each of the tile
     function populateBannerTileArray (screenWidth) {
         const tileSize = 50;
         const bannerHeight = 300;
@@ -36,8 +38,12 @@ export default function Banner (props) {
         setBannerTiles(newTileLayout);
     }
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         populateBannerTileArray(window.innerWidth);
+    }, [screenWidth])
+
+    window.addEventListener("resize", () => {
+        setScreenWidth(window.innerWidth !== screenWidth ? window.innerWidth : screenWidth);
     })
 
     return (

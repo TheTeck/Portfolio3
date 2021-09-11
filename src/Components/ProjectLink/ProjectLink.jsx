@@ -8,9 +8,7 @@ export default function ProjectLink (props) {
     const history = useHistory();
 
     function handleProjectClick () {
-        const link = props.project.link;
-        console.log(link)
-        //history.push({link});
+        history.push(props.project.link);
     }
 
     return (
