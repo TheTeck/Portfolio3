@@ -39,7 +39,7 @@ export default function Banner (props) {
     }
 
     useLayoutEffect(() => {
-        populateBannerTileArray(window.innerWidth);
+        populateBannerTileArray(screenWidth);
     }, [screenWidth])
 
     window.addEventListener("resize", () => {

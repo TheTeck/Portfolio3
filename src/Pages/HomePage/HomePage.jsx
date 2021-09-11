@@ -23,7 +23,7 @@ export default function HomePage (props) {
     }
 
     return (
-        <div classname="homepage-container">
+        <div className="homepage-container">
             <Banner />
             <ContentContainer>
                 <div className="section-wrapper">
