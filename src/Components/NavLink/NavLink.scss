@@ -1,0 +1,30 @@
+@import "../../Scss/colors";
+@import "../../Scss/fonts";
+
+.nav-link,
+.nav-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $primary-color;
+  margin: 0 20px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.custom-icon {
+  font-size: $largest-text;
+}
+
+.link-text {
+  font-family: $primary-font;
+  font-size: $big-text;
+  font-weight: 700;
+  transition: all 200ms linear;
+}
