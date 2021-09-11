@@ -13,10 +13,12 @@ export default function HomePage (props) {
         justpuzzles: {
             name: "Just Puzzles",
             image: "polygonpuzzle.png",
+            link: "/puzzle"
         },
         sheetmusic: {
             name: "Sheet Music Maker",
             image: "sheetmusic.png",
+            link: "/music"
         }
     }
 
