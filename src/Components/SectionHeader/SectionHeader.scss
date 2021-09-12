@@ -1,0 +1,24 @@
+@import "../../Scss/colors";
+@import "../../Scss/fonts";
+
+.sectionheader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  color: $secondary-color;
+  background-color: $primary-color;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sectionheader-title {
+  font-size: $medium-big-text;
+}
+
+.section-icons {
+  font-size: $big-text;
+  padding-right: 10px;
+}
