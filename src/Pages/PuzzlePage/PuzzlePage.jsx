@@ -33,6 +33,22 @@ export default function PuzzlePage (props) {
                 </ProjectSection>
                 <ProjectSection active={activeSection === "obj"} code="obj" title="Objective" handleActivateSection={handleActivateSection} />
                 <ProjectSection active={activeSection === "cod"} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection} />
+                <label for="desc">
+                    <div className="material-icons label-icon">add</div>
+                    Description
+                    <input type="radio" id="desc" name="sections"/>
+                </label>
+                
+                <label for="desc">
+                    Objective
+                    <input type="radio" id="obj" name="sections"/>
+                </label>
+                
+                <label for="desc">
+                    Code
+                    <input type="radio" id="code" name="sections"/>
+                </label>
+                
             </ContentContainer>
         </div>
     )
