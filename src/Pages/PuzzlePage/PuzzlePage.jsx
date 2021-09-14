@@ -28,27 +28,11 @@ export default function PuzzlePage (props) {
             <Banner main="Just Puzzles" />
             <ContentContainer>
                 <ProjectNav links={links} />
-                <ProjectSection active={activeSection === "des"} code="des" title="Description" handleActivateSection={handleActivateSection}>
+                <ProjectSection active={activeSection} code="des" title="Description" handleActivateSection={handleActivateSection}>
                     <div>This is a test fjdowiejf owiejf lksjf owi ejf kjsowie jflks odkfjlskdjfowijef s owee dow we </div>
                 </ProjectSection>
-                <ProjectSection active={activeSection === "obj"} code="obj" title="Objective" handleActivateSection={handleActivateSection} />
-                <ProjectSection active={activeSection === "cod"} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection} />
-                <label for="desc">
-                    <div className="material-icons label-icon">add</div>
-                    Description
-                    <input type="radio" id="desc" name="sections"/>
-                </label>
-                
-                <label for="desc">
-                    Objective
-                    <input type="radio" id="obj" name="sections"/>
-                </label>
-                
-                <label for="desc">
-                    Code
-                    <input type="radio" id="code" name="sections"/>
-                </label>
-                
+                <ProjectSection active={activeSection} code="obj" title="Objective" handleActivateSection={handleActivateSection} />
+                <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection} />                
             </ContentContainer>
         </div>
     )
