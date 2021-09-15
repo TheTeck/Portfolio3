@@ -10,7 +10,7 @@ export default function ProjectSection (props) {
     }
 
     return (
-        <div className="section-container" onClick={handleSectionClick}>
+        <button className="section-container" onClick={handleSectionClick}>
             <SectionHeader title={props.title} active={props.active === props.code} />
             <div 
                 className="section-content-container"
@@ -18,6 +18,6 @@ export default function ProjectSection (props) {
             >
                 <div className="section-content">{props.children}</div>
             </div>
-        </div>
+        </button>
     )
 }
