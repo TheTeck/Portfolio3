@@ -13,10 +13,10 @@ export default function ProjectLink (props) {
 
     return (
         <div className="projectlink-container">
-            <div className="projectimage-container" onClick={handleProjectClick}>
+            <button className="projectimage-container" onClick={handleProjectClick}>
                 <img src={props.project.image} alt={props.project.alt} />
                 <div className="project-label">{props.project.name}</div>
-            </div>
+            </button>
         </div>
     )
 }

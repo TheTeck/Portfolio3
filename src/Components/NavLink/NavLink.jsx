@@ -16,10 +16,10 @@ export default function NavLink (props) {
         <>
             {
                 props.link === "/home" ? 
-                    <div className="nav-back" onClick={handleLinkClick}>
+                    <button className="nav-back" onClick={handleLinkClick}>
                         <div className="material-icons custom-icon">{props.icon}</div>
                         <div className="link-text">{props.text}</div>
-                    </div>
+                    </button>
                 :
                     <a  className="nav-link" href={props.link} rel="noreferrer" target="_blank">
                         <div className="material-icons custom-icon">{props.icon}</div>

@@ -23,6 +23,15 @@
   border: 5px solid $primary-color;
   cursor: pointer;
 
+  &:focus {
+    box-shadow: 0 0 40px $primary-color;
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
   img {
     width: 400px;
     height: 300px;
