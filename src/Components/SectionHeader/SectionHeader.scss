@@ -12,6 +12,7 @@
   padding: 0.5em 1.5em;
   cursor: pointer;
   font-weight: 600;
+  font-family: $primary-font;
 }
 
 .sectionheader-title {
@@ -19,6 +20,6 @@
 }
 
 .section-icons {
-  font-size: $big-text;
+  font-size: $medium-big-text;
   padding-right: 10px;
 }

@@ -22,10 +22,15 @@
   &:focus {
     border-bottom: 5px solid $primary-color;
   }
+
+  &:active {
+    border: none;
+  }
 }
 
 .custom-icon {
-  font-size: $largest-text;
+  font-size: $big-text;
+  margin-right: 10px;
 }
 
 .link-text {

@@ -9,10 +9,9 @@
 }
 
 .profileimage-container {
-  width: 400px;
+  width: 300px;
   height: 400px;
   margin-top: 100px;
-  border-radius: 100px 50px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,22 +27,23 @@
   }
 
   img:hover {
-    width: 420px;
-    height: 420px;
+    width: 410px;
+    height: 410px;
   }
 }
 
 .image-label {
   position: absolute;
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: $secondary-color;
+  color: $primary-color;
+  border: 3px solid $primary-color;
   font-size: $big-text;
   font-weight: 700;
   font-family: $primary-font;
   padding: 0.6em 0.9em;
-  border-radius: 30px 15px;
-  bottom: -20px;
+  bottom: -65px;
   right: -20px;
+  pointer-events: none;
 }
 
 @media (min-width: 1200px) {
