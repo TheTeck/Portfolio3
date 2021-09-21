@@ -5,6 +5,7 @@ import ContentContainer from '../../Components/ContentContainer/ContentContainer
 import ProfileImage from '../../Components/ProfileImage/ProfileImage';
 import Paragraph from '../../Components/Paragraph/Paragraph';
 import ProjectLink from '../../Components/ProjectLink/ProjectLink';
+import Contact from '../../Components/Contact/Contact';
 import './HomePage.scss';
 
 export default function HomePage (props) {
@@ -35,6 +36,8 @@ export default function HomePage (props) {
                     </Paragraph>
                 </div>
             </ContentContainer>
+
+            <Contact />
 
             <h1>Projects</h1>
             <ContentContainer>
