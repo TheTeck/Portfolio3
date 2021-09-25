@@ -12,7 +12,9 @@ export default function Contact (props) {
                 </a>
             </div>
             <div className="contact-info-container">
-
+                <p>Email: <a href="mailto:johnteckemeyer@gmail.com">johnteckemeyer@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/TheTeck" rel="noreferrer" target="_blank">github.com/TheTeck</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/john-teckemeyer/" rel="noreferrer" target="_blank">linkedin.com/in/john-teckemeyer</a></p>
             </div>
         </div>
     )
