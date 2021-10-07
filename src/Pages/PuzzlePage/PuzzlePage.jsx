@@ -20,7 +20,7 @@ export default function PuzzlePage (props) {
     const tech = ['HTML', 'SCSS', 'Javascript', 'React', 'Node', 'MongoDB', 'AWS S3'];
 
     const description = <Paragraph><strong>Just Puzzles</strong> is an online source for puzzles that takes an image and breaks it up into the number of pieces and piece shape specified by the user. As the admin, I can upload many images ahead of time and have them released upon the date given to each image for a hands-off daily update. The puzzle mechanics and image selections were designed to create a enjoyable, relaxing and satisfying user experience.</Paragraph>
-    const objective = <Paragraph>Why I made this...</Paragraph>
+    const objective = <Paragraph>The focus of this application was to develop my CSS skills as well as work with more complex algorithms than normally found in front end development.</Paragraph>
 
     function handleActivateSection (section) {
         if (activeSection === section) {
@@ -42,7 +42,12 @@ export default function PuzzlePage (props) {
                 <ProjectSection active={activeSection} code="obj" title="Objective" handleActivateSection={handleActivateSection}>
                     {objective}
                 </ProjectSection>
-                <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection} />
+                <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
+                    <img className="site-shot" src="puzzles_homepage.png" />
+                    <img className="site-shot" src="puzzles_options.png" />
+                    <img className="site-shot" src="puzzles_tile.png" />
+                    <img className="site-shot" src="polygonpuzzle.png" />
+                </ProjectSection>
                 <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection} />                
             </ContentContainer>
         </div>
