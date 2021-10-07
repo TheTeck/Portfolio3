@@ -76,8 +76,11 @@
     width: 45%;
 
     a {
+      height: 85px;
       position: absolute;
       right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
