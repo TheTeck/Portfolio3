@@ -22,6 +22,12 @@ export default function HomePage (props) {
             image: "sheetmusic.png",
             link: "/music",
             alt: "First page of some sheet music in the editor"
+        },
+        ouralley: {
+            name: "Our Alley",
+            image: "ouralley_playdates.png",
+            link: "/ouralley",
+            alt: "A list of playdates, each with all the dogs going listed"
         }
     }
 
@@ -44,6 +50,7 @@ export default function HomePage (props) {
                 <div className="section-wrapper projects-wrapper">
                     <ProjectLink project={projects["justpuzzles"]} />
                     <ProjectLink project={projects["sheetmusic"]} />
+                    <ProjectLink project={projects["ouralley"]} />
                 </div>
             </ContentContainer>
         </div>
