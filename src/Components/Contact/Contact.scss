@@ -11,6 +11,9 @@
   font-size: $medium-big-text;
   font-family: $primary-font;
   font-weight: 700;
+  background-color: $primary-color-alpha;
+  height: 400px;
+  padding-top: 3em;
 }
 
 .resume-container {
@@ -29,6 +32,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  p {
+    color: $secondary-color;
+  }
 }
 
 .resume-container a {
@@ -42,13 +49,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: $primary-color;
+  color: $secondary-color;
   text-decoration: none;
   height: 100%;
 
   &:focus {
     outline: none;
-    border-bottom: 4px solid $primary-color;
+    border-bottom: 4px solid $secondary-color;
     padding-bottom: 0;
   }
 
@@ -63,13 +70,18 @@
 
 .resume-text {
   font-size: $medium-big-text;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+p a:focus {
+  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
   .contact-container {
     flex-direction: row;
     height: 250px;
+    padding-top: 0;
   }
 
   .resume-container {
