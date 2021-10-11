@@ -37,6 +37,7 @@ export default function PuzzlePage (props) {
                 <ProjectNav links={links} />
                 <ProjectSection active={activeSection} code="des" title="Description" handleActivateSection={handleActivateSection}>
                     {description}
+                    <div className="tech-name">Technologies Used</div>
                     <TechList tech={tech} />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="obj" title="Objective" handleActivateSection={handleActivateSection}>

@@ -6,9 +6,14 @@ import ProfileImage from '../../Components/ProfileImage/ProfileImage';
 import Paragraph from '../../Components/Paragraph/Paragraph';
 import ProjectLink from '../../Components/ProjectLink/ProjectLink';
 import Contact from '../../Components/Contact/Contact';
+import TechList from '../../Components/TechList/TechList';
 import './HomePage.scss';
 
 export default function HomePage (props) {
+
+    const tech = ['Javascript', 'Typescript', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
+                  'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
+                  'PostgreSQL', 'Git/GitHub'];
 
     const projects = {
         justpuzzles: {
@@ -42,6 +47,11 @@ export default function HomePage (props) {
                     </Paragraph>
                 </div>
             </ContentContainer>
+
+            <div className="skills-label">Technical Skills</div>
+            <div className="skill-wrapper">
+                <TechList tech={tech} />
+            </div>
 
             <Contact />
 
