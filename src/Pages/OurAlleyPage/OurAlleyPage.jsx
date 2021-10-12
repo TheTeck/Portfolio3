@@ -49,7 +49,12 @@ export default function PuzzlePage (props) {
                     <img className="site-shot" src="ouralley_playdate.png" />
                     <img className="site-shot" src="ouralley_playdates.png" />
                 </ProjectSection>
-                <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection} />                
+                <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
+                    <img className="site-shot" src="getlocaldogs.png" />
+                    <Paragraph>One of the more complicated parts of this application that I was in charge of was the implementation of searching more local dogs. Here, depending on whether the user used an explicit location, the algorithm will use that location or the user's home address, using a helper function to convert the address to latitude and longitude coordinates. Then the function filters through all other users' dogs that have a location within 2 miles, again using a helper function to get the distance of each dog.</Paragraph>
+                    <img className="site-shot" src="helperfunctions.png" />
+                    <Paragraph>The first helper function, the haversine function, returns the distance between two points on the surface of the Earth. The second helper function, extract_lat_long_via_address, makes a call the the Google Maps api to get the latitude and longitude coordinates for a given address.</Paragraph>
+                </ProjectSection>                
             </ContentContainer>
         </div>
     )
