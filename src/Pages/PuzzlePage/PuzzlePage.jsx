@@ -49,7 +49,10 @@ export default function PuzzlePage (props) {
                     <img className="site-shot" src="puzzles_tile.png" />
                     <img className="site-shot" src="polygonpuzzle.png" />
                 </ProjectSection>
-                <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection} />                
+                <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
+                    <img className="site-shot" src="movepiece.png" />
+                    <Paragraph>Whenever a piece is active and the mouse moves, firing an event, the movePiece function is called. In the movePiece function, the for loop goes through all of the connected pieces attached to the active piece and updates their location based upon the location of the active piece by calling the updatePieceLocation function. In the updatePieceLocation function, if first checks to see if the piece is in either the first row or column. If it is, then it does not need to include a buffer offset, otherwise it does.</Paragraph>
+                </ProjectSection>               
             </ContentContainer>
         </div>
     )
