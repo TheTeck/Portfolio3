@@ -10,7 +10,7 @@ import './OurAlleyPage.scss';
 
 export default function PuzzlePage (props) {
 
-    const [activeSection, setActiveSection] = useState(null);
+    const [activeSection, setActiveSection] = useState('des');
 
     const links = {
         site: "https://ouralley.herokuapp.com/",

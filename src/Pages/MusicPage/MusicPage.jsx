@@ -10,7 +10,7 @@ import './MusicPage.scss';
 
 export default function MusicPage (props) {
 
-    const [activeSection, setActiveSection] = useState(null);
+    const [activeSection, setActiveSection] = useState('des');
 
     const links = {
         site: "https://sheetmusicmaker.herokuapp.com",
