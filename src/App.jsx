@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import PuzzlePage from './Pages/PuzzlePage/PuzzlePage';
 import MusicPage from './Pages/MusicPage/MusicPage';
 import OurAlleyPage from './Pages/OurAlleyPage/OurAlleyPage';
+import MinesweeperPage from './Pages/MinesweeperPage/MinesweeperPage';
 import './App.scss';
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route exact path="/ouralley">
           <OurAlleyPage />
+        </Route>
+        <Route exact path="/minesweeper">
+          <MinesweeperPage />
         </Route>
         <Route exact path="/">
           <HomePage />
