@@ -11,7 +11,7 @@ import './HomePage.scss';
 
 export default function HomePage (props) {
 
-    const tech = ['Javascript', 'Typescript', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
+    const tech = ['Javascript', 'Typescript', 'Ruby', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
                   'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
                   'PostgreSQL', 'Git/GitHub'];
 
@@ -33,6 +33,12 @@ export default function HomePage (props) {
             image: "ouralley_playdates.png",
             link: "/ouralley",
             alt: "A list of playdates, each with all the dogs going listed"
+        },
+        minesweeper: {
+            name: "Minesweeper",
+            image: "minesweeper.png",
+            link: "/minesweeper",
+            alt: "An example of the game, Minesweeper, with some cells exposed"
         }
     }
 
@@ -61,6 +67,7 @@ export default function HomePage (props) {
                     <ProjectLink project={projects["justpuzzles"]} />
                     <ProjectLink project={projects["sheetmusic"]} />
                     <ProjectLink project={projects["ouralley"]} />
+                    <ProjectLink project={projects["minesweeper"]} />
                 </div>
             </ContentContainer>
         </div>
