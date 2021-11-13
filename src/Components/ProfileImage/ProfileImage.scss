@@ -11,7 +11,7 @@
 .profileimage-container {
   width: 300px;
   height: 400px;
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,28 +32,6 @@
     width: 410px;
     height: 410px;
   }
-}
-
-.image-label {
-  position: absolute;
-  background-color: $color-label-dark;
-  background: linear-gradient(
-    100deg,
-    $color-label-dark,
-    $color-label-light 10%,
-    $color-label-dark
-  );
-  color: $secondary-color;
-  text-shadow: -1px -1px 1px $color-label-dark;
-  border: 3px solid $secondary-color;
-  outline: 3px solid $color-label-dark;
-  font-size: $big-text;
-  font-weight: 700;
-  font-family: $primary-font;
-  padding: 0.6em 0.9em;
-  bottom: -65px;
-  right: -20px;
-  pointer-events: none;
 }
 
 @media (min-width: 1200px) {

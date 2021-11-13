@@ -57,7 +57,7 @@ export default function HomePage (props) {
                     <div id="about-me-paragraph">
                         <div id="paragraph-backing"></div>
                         <Paragraph>
-                            I am a full-stack web developer out of the San Francisco Bay Area. Some of my greatest passions in life revolve around creating beautifully designed products that people enjoy using. Recently, I have transitioned from making physical, hand-crafted instruments to software engineering, because, in the digital space, I am only limited by my creativity and skills and with enough effort anything can be achieved. Now, I am looking for a position within a team where I can help create applications that people will love to use and, hopefully, help them achieve betterment in life.
+                            I am a full-stack web developer out of the San Francisco Bay Area. Some of my greatest passions in life revolve around creating beautifully designed products that people enjoy using. Recently, I have transitioned from making physical, hand-crafted instruments to software engineering, because, in the digital space, I am only limited by my creativity and skills. I truly believe with enough effort anything can be achieved. Now, I am looking for a position within a team where I can help create applications that people will love to use and hopefully help them achieve betterment in life.
                         </Paragraph>
                     </div>
                 </div>
