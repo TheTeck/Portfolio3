@@ -19,6 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $primary-color;
+  color: $text-light;
 
   img {
     width: 400px;
