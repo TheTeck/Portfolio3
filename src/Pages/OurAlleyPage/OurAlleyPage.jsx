@@ -44,15 +44,15 @@ export default function PuzzlePage (props) {
                     {objective}
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="ouralley.png" />
-                    <img className="site-shot" src="ouralley_mypets.png" />
-                    <img className="site-shot" src="ouralley_playdate.png" />
-                    <img className="site-shot" src="ouralley_playdates.png" />
+                    <img className="site-shot" src="ouralley.png" alt="Login or signup page" />
+                    <img className="site-shot" src="ouralley_mypets.png" alt="All the user's pets" />
+                    <img className="site-shot" src="ouralley_playdate.png" alt="Creating a playdate to add dogs. Also shows dogs invited." />
+                    <img className="site-shot" src="ouralley_playdates.png" alt="List of all the playdates with all the information displayed" />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="getlocaldogs.png" />
+                    <img className="site-shot" src="getlocaldogs.png" alt="Code using helper functions to locate the user and surrounding local dogs" />
                     <Paragraph>One of the more complicated parts of this application that I was in charge of was the implementation of searching more local dogs. Here, depending on whether the user used an explicit location, the algorithm will use that location or the user's home address, using a helper function to convert the address to latitude and longitude coordinates. Then the function filters through all other users' dogs that have a location within 2 miles, again using a helper function to get the distance of each dog.</Paragraph>
-                    <img className="site-shot" src="helperfunctions.png" />
+                    <img className="site-shot" src="helperfunctions.png" alt="Code that helps with getting latitude and longitude coordinates from an address and finding the distance between two point on Earth." />
                     <Paragraph>The first helper function, the haversine function, returns the distance between two points on the surface of the Earth. The second helper function, extract_lat_long_via_address, makes a call the the Google Maps api to get the latitude and longitude coordinates for a given address.</Paragraph>
                 </ProjectSection>                
             </ContentContainer>

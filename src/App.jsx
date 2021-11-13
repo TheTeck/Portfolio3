@@ -6,6 +6,7 @@ import PuzzlePage from './Pages/PuzzlePage/PuzzlePage';
 import MusicPage from './Pages/MusicPage/MusicPage';
 import OurAlleyPage from './Pages/OurAlleyPage/OurAlleyPage';
 import MinesweeperPage from './Pages/MinesweeperPage/MinesweeperPage';
+import WeatherPage from './Pages/WeatherPage/WeatherPage';
 import './App.scss';
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path="/minesweeper">
           <MinesweeperPage />
+        </Route>
+        <Route exact path="/weather">
+          <WeatherPage />
         </Route>
         <Route exact path="/">
           <HomePage />

@@ -44,13 +44,13 @@ export default function PuzzlePage (props) {
                     {objective}
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="puzzles_homepage.png" />
-                    <img className="site-shot" src="puzzles_options.png" />
-                    <img className="site-shot" src="puzzles_tile.png" />
-                    <img className="site-shot" src="polygonpuzzle.png" />
+                    <img className="site-shot" src="puzzles_homepage.png" alt="All available puzzles in order of release"/>
+                    <img className="site-shot" src="puzzles_options.png" alt="Puzzle options that determine how to generate the puzzle" />
+                    <img className="site-shot" src="puzzles_tile.png" alt="Scattered puzzle pieces in square tile shape" />
+                    <img className="site-shot" src="polygonpuzzle.png" alt="Scattered puzzle pieces in random polygonal shapes" />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="movepiece.png" />
+                    <img className="site-shot" src="movepiece.png" alt="Code for moving a puzzle piece and all connected pieces" />
                     <Paragraph>Whenever a piece is active and the mouse moves, firing an event, the movePiece function is called. In the movePiece function, the for loop goes through all of the connected pieces attached to the active piece and updates their location based upon the location of the active piece by calling the updatePieceLocation function. In the updatePieceLocation function, if first checks to see if the piece is in either the first row or column. If it is, then it does not need to include a buffer offset, otherwise it does.</Paragraph>
                 </ProjectSection>               
             </ContentContainer>
