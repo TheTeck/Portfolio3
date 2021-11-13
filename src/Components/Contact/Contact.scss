@@ -12,6 +12,12 @@
   font-family: $primary-font;
   font-weight: 700;
   background-color: $primary-color-alpha;
+  background: linear-gradient(
+    100deg,
+    $primary-color,
+    $secondary-color 10%,
+    $primary-color-alpha
+  );
   height: 400px;
   padding-top: 3em;
 }
@@ -34,7 +40,7 @@
   align-items: center;
 
   p {
-    color: $secondary-color;
+    color: $text-dark;
   }
 }
 
@@ -49,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: $secondary-color;
+  color: $text-dark;
   text-decoration: none;
   height: 100%;
 
@@ -70,7 +76,7 @@
 
 .resume-text {
   font-size: $medium-big-text;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 p a:focus {
