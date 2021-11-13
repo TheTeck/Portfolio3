@@ -36,9 +36,17 @@
 
 .image-label {
   position: absolute;
-  background-color: $tertiary-color;
-  color: $primary-color;
-  border: 3px solid $primary-color;
+  background-color: $color-label-dark;
+  background: linear-gradient(
+    100deg,
+    $color-label-dark,
+    $color-label-light 10%,
+    $color-label-dark
+  );
+  color: $secondary-color;
+  text-shadow: -1px -1px 1px $color-label-dark;
+  border: 3px solid $secondary-color;
+  outline: 3px solid $color-label-dark;
   font-size: $big-text;
   font-weight: 700;
   font-family: $primary-font;

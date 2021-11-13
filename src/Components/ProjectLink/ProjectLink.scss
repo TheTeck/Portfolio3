@@ -46,15 +46,24 @@
 
 .project-label {
   position: absolute;
-  background-color: $tertiary-color;
-  color: $primary-color;
+  background-color: $color-label-dark;
+  background: linear-gradient(
+    100deg,
+    $color-label-dark,
+    $color-label-light 10%,
+    $color-label-dark
+  );
+  color: $secondary-color;
+  text-shadow: -1px -1px 1px $color-label-dark;
   font-size: $big-text;
   font-weight: 700;
   font-family: $primary-font;
   padding: 0.6em 0.9em;
-  border: 3px solid $primary-color;
+  border: 3px solid $secondary-color;
+  outline: 3px solid $color-label-dark;
   bottom: -60px;
-  right: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
 }
 
