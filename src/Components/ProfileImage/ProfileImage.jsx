@@ -8,7 +8,6 @@ export default function ProfileImage (props) {
             <div className="profileimage-container">
                 <img src="headshot.png" alt="John Teckemeyer smiling into camera" />
             </div>
-            <div className="image-label">About Me</div>
         </div>
     )
 }

@@ -2,7 +2,7 @@
 @import "../../Scss/fonts";
 
 .homepage-container {
-  background-color: $secondary-color;
+  background: linear-gradient($secondary-color 60%, $primary-color);
   width: 100%;
 }
 
