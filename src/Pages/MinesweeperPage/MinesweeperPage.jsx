@@ -44,12 +44,12 @@ export default function MinesweeperPage (props) {
                     {objective}
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="minesweeper.png" />
+                    <img className="site-shot" src="minesweeper.png" alt="The game Minesweeper in an 80's retro style" />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="creategame.png" />
+                    <img className="site-shot" src="creategame.png" alt="Code showing the creation of the game board" />
                     <Paragraph>Every time a new game is started, a new array is created that is filled with instances of the CellData class. The CellData class has most instance variables starting with default values, but then each instance is supplied a value created by the functions populateBombs and popoulateNumbers.</Paragraph>
-                    <img className="site-shot" src="exposecells.png" />
+                    <img className="site-shot" src="exposecells.png" alt="Code showing recursive functionality to expose more of the game board" />
                     <Paragraph>When a user left-clicks on a cell, that cell becomes exposed. If the cell is not empty, such as a number or bomb, then the exposeMore function is done. However, if the cell is empty, the function is going to recursively call itself for each cell that surrounds it, if they are not already exposed.</Paragraph>
                 </ProjectSection>               
             </ContentContainer>

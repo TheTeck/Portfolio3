@@ -32,14 +32,15 @@
   }
 
   img {
-    width: 400px;
+    width: 500px;
     height: 300px;
+
     transition: all 200ms linear;
   }
 
   img:hover {
     width: 630px;
-    height: 472px;
+    height: 378px;
   }
 }
 

@@ -44,18 +44,18 @@ export default function MusicPage (props) {
                     {objective}
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="musiclandingpage.png" />
-                    <img className="site-shot" src="musichomepage.png" />
-                    <img className="site-shot" src="musicopusindexpage.png" />
-                    <img className="site-shot" src="musiceditopuspage.png" />
+                    <img className="site-shot" src="musiclandingpage.png" alt="Sheet Music Maker login or signup page" />
+                    <img className="site-shot" src="musichomepage.png" alt="Sheet Music Maker homepage" />
+                    <img className="site-shot" src="musicopusindexpage.png" alt="All of the user's sheet music" />
+                    <img className="site-shot" src="musiceditopuspage.png" alt="The edit screen to write music on staves" />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
                     <Paragraph>In the sheet music editor, the "sheet music" is made of many components (as is the way of React). In the Page components, there are Staff components. And in each Staff component, there are Measure components. When a note is written by the user on the sheet music, it begins to build a string that represents the music.</Paragraph>
-                    <img className="site-shot" src="inmeasure.png" />
+                    <img className="site-shot" src="inmeasure.png" alt="Code showing state being added to a string and lifted" />
                     <Paragraph>In handleStaffClick function (within the Measure component), when a note is entered onto a staff, its duration and pitch is represented as a string and concatenated to the string which makes up the current measure and then lifted to the parent Staff component.</Paragraph>
-                    <img className="site-shot" src="instaff.png" />
+                    <img className="site-shot" src="instaff.png" alt="Code showing more state being added to a string and lifted" />
                     <Paragraph>In the updateMeasure function (within the Staff component), the measure that had been updated is written over by the string value held by the 'notes' parameter and then calls updateStaff, concatenating all the strings representing the measures of the staff and lifts the data back to the parent Page component.</Paragraph>
-                    <img className="site-shot" src="inpage.png" />
+                    <img className="site-shot" src="inpage.png" alt="Even more code showing more state being added to a string and lifted" />
                     <Paragraph>Here in the updateStaff function (within the Page component), it works much like the updateMeasure in that it updates the active Staff and concatenates the string representing with the rest of the Staves and updates the entire Page's music with a string.</Paragraph>
                 </ProjectSection>                
             </ContentContainer>

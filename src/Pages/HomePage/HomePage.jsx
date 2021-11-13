@@ -16,6 +16,12 @@ export default function HomePage (props) {
                   'PostgreSQL', 'Git/GitHub'];
 
     const projects = {
+        zipWeather: {
+            name: "Zip Weather",
+            image: "zipweather.png",
+            link: "/weather",
+            alt: "Weather data for today"
+        },
         justpuzzles: {
             name: "Just Puzzles",
             image: "polygonpuzzle.png",
@@ -64,9 +70,10 @@ export default function HomePage (props) {
             <h1>Projects</h1>
             <ContentContainer>
                 <div className="section-wrapper projects-wrapper">
-                    <ProjectLink project={projects["justpuzzles"]} />
+                    <ProjectLink project={projects["zipWeather"]} />
                     <ProjectLink project={projects["sheetmusic"]} />
                     <ProjectLink project={projects["ouralley"]} />
+                    <ProjectLink project={projects["justpuzzles"]} />
                     <ProjectLink project={projects["minesweeper"]} />
                 </div>
             </ContentContainer>
