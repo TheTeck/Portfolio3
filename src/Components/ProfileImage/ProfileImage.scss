@@ -1,41 +1,33 @@
 @import "../../Scss/colors";
 @import "../../Scss/fonts";
 
-.profile-container {
-  height: 100%;
-  width: 400px;
-  position: relative;
-  margin-bottom: 100px;
-}
-
-.profileimage-container {
-  width: 300px;
-  height: 400px;
-  margin: 100px auto 0 auto;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#profileimage-container {
+  width: 240px;
+  height: 320px;
+  display: none;
   background-color: $primary-color;
   color: $text-light;
 
   img {
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     transition: all 200ms linear;
   }
 
   img:hover {
-    width: 410px;
-    height: 410px;
+    width: 328px;
+    height: 328px;
   }
 }
 
 @media (min-width: 1200px) {
-  .profile-container {
-    margin-right: 100px;
+  #profileimage-container {
+    margin: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
 }

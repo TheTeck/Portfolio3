@@ -20,6 +20,7 @@ h1 {
   background-color: $secondary-color;
   position: relative;
   z-index: 1;
+  margin-top: 50px;
 
   &::before {
     content: "";
@@ -86,9 +87,6 @@ h1 {
 }
 
 @media (min-width: 1500px) {
-  .section-wrapper {
-    flex-direction: row;
-  }
   .skill-wrapper {
     width: 60%;
   }
@@ -100,9 +98,12 @@ h1 {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .projects-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .section-wrapper {
+    flex-direction: row;
   }
 }

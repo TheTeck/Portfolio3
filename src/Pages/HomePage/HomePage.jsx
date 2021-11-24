@@ -12,7 +12,7 @@ import './HomePage.scss';
 export default function HomePage (props) {
 
     const tech = ['Javascript', 'Typescript', 'Ruby', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
-                  'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
+                  'D3', 'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
                   'PostgreSQL', 'Git/GitHub'];
 
     const projects = {
