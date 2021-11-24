@@ -17,10 +17,10 @@ export default function PuzzlePage (props) {
         github: "https://github.com/TheTeck/Weather"
     }
 
-    const tech = ['HTML', 'SCSS', 'Javascript', 'React', 'Node', 'Express', 'Open Weather API', 'Geolocation DB API'];
+    const tech = ['HTML', 'SCSS', 'Javascript', 'D3.js', 'React', 'Node', 'Express', 'Open Weather API', 'Geolocation DB API'];
 
     const description = <Paragraph><strong>Zip Weather</strong> is a site that will retrieve and display weather data for a given zipcode location. It will display the current weather, 24 hour forecasts and 7 day forecasts.</Paragraph>
-    const objective = <Paragraph>The focus of this application to was two things: First, to further practice using 3rd party apis instead of using a user defined database. Second, to reinforce and see what I could accomplish in React without being burdoned with the designing of the UI (I just copied an actual website).</Paragraph>
+    const objective = <Paragraph>The focus of this application to was two things: First, to further practice using 3rd party apis instead of using a user defined database. Second, to reinforce and see what I could accomplish in React without being burdoned with the designing of the UI (I just copied an actual website). Third objective was to utilize my new knowledge of D3.js. With it I created a line chart to visualize the change in temperature through the next 24 hours.</Paragraph>
 
     function handleActivateSection (section) {
         if (activeSection === section) {
@@ -45,6 +45,8 @@ export default function PuzzlePage (props) {
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
                     <img className="site-shot" src="zipweather.png" alt="Zip Weather homepage" />
+                    <img className="site-shot" src="todayallweather.png" alt="All of today's weather metrics" />
+                    <img className="site-shot" src="temperaturechart.png" alt="24 hour temperature line chart" />
                     <img className="site-shot" src="zipweatherhourly.png" alt="Zip Weather hourly forecast page" />
                     <img className="site-shot" src="zipweatherdays.png" alt="Zip Weather seven day forecast page" />
                 </ProjectSection>
