@@ -61,7 +61,7 @@
 
   &:focus {
     outline: none;
-    border-bottom: 4px solid $secondary-color;
+    border-bottom: 4px solid $text-dark;
     padding-bottom: 0;
   }
 
@@ -106,5 +106,11 @@ p a:focus {
     width: 60%;
     align-items: flex-start;
     padding-left: 3em;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    font-size: $small-text;
   }
 }

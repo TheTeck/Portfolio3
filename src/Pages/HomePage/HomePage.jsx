@@ -14,23 +14,24 @@ export default function HomePage (props) {
     
     const tech = {
         nodes: [
+            { name: 'Sass', category: 'library', level: 5 },
+            { name: 'HTML', category: 'style', level: 5 },
+            { name: 'CSS', category: 'style', level: 5 },
             { name: 'Javascript', category: 'language', level: 5 },
+            { name: 'React', category: 'framework', level: 5 },
+            { name: 'Algorithms', category: 'other', level: 4 },
+            { name: 'RESTful APIs', category: 'other', level: 5 },
+            { name: 'Express', category: 'framework', level: 4 },
+            { name: 'MongoDB', category: 'database', level: 4 },
+            { name: 'Node', category: 'other', level: 4 },
+            { name: 'Git/GitHub', category: 'other', level: 4 },
+            { name: 'D3', category: 'library', level: 4 },
+            { name: 'Data Visualization', category: 'other', level: 4 },
             { name: 'Typescript', category: 'language', level: 3 },
             { name: 'Ruby', category: 'language', level: 2 },
             { name: 'Python', category: 'language', level: 2 },
-            { name: 'HTML', category: 'style', level: 5 },
-            { name: 'CSS', category: 'style', level: 5 },
-            { name: 'Sass', category: 'library', level: 5 },
-            { name: 'React', category: 'framework', level: 5 },
-            { name: 'Express', category: 'framework', level: 4 },
             { name: 'Django', category: 'framework', level: 1 },
-            { name: 'MongoDB', category: 'database', level: 4 },
-            { name: 'PostgreSQL', category: 'database', level: 1 },
-            { name: 'D3', category: 'library', level: 4 },
-            { name: 'Node', category: 'other', level: 4 },
-            { name: 'RESTful APIs', category: 'other', level: 5 },
-            { name: 'Git/GitHub', category: 'other', level: 4 },
-            { name: 'Data Visualization', category: 'other', level: 4 }
+            { name: 'PostgreSQL', category: 'database', level: 1 }
         ]
     }
 
