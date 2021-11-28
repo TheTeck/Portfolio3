@@ -22,8 +22,8 @@ export default function BubbleChart ({ tech }) {
 
     useEffect(() => {
         let svg = d3.select(svgRef.current)
-            //.attr('width', width)
-            //.attr('height', height)
+            .attr('width', width)
+            .attr('height', height)
         
         svg.selectAll('g').remove();
 
@@ -31,7 +31,7 @@ export default function BubbleChart ({ tech }) {
             .forceSimulation(data.nodes)
             .force("charge", d3.forceManyBody().strength(300))
             .force("center", d3.forceCenter(width / 2, height / 2))
-            .force('collide', d3.forceCollide(d => d.level * 6 + 50).strength(0.7))
+            .force('collide', d3.forceCollide(d => d.level * 7 + 40).strength(0.7))
             .on("tick", ticked);
                 
         let drag = d3
@@ -41,7 +41,6 @@ export default function BubbleChart ({ tech }) {
             .on('end', dragended)
 
         let textAndNodes = svg
-            .append('g')
             .selectAll('g')
             .data(data.nodes)
             .enter()
@@ -50,7 +49,7 @@ export default function BubbleChart ({ tech }) {
         
         let circles = textAndNodes
             .append('circle')
-            .attr('r', d => d.level * 6 + 50)
+            .attr('r', d => d.level * 7 + 40)
             .attr('fill', d => colors[d.category])
 
         circles
@@ -100,8 +99,10 @@ export default function BubbleChart ({ tech }) {
             simulation.alphaTarget(0.1);
             d.fx = null;
             d.fy = null;
+
+            return () => svg.remove();
         }
-     })
+     }, [])
     
     return (
         <div id="tech-container">
@@ -109,24 +110,3 @@ export default function BubbleChart ({ tech }) {
         </div>
     )
 }
-
-// import React from 'react';
-
-// import './TechList.scss';
-
-// export default function TechList (props) {
-
-//     return (
-//         <div className="tech-display">
-//             <div className="tech-container">
-//                 {
-//                     props.tech.map((item, index) => {
-//                         return (
-//                             <div key={index}>{item}</div>
-//                         )
-//                     })
-//                 }
-//             </div>
-//         </div>
-//     )
-// }

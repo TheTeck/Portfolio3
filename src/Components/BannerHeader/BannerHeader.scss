@@ -23,3 +23,18 @@
   color: $text-light;
   font-size: $big-text;
 }
+
+@media (max-width: 500px) {
+  .bannerheader-container {
+    top: 20px;
+    left: 30px;
+
+    h1 {
+      font-size: $big-text;
+    }
+
+    h2 {
+      font-size: $medium-text;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import ProjectNav from '../../Components/ProjectNav/ProjectNav';
 import Banner from '../../Components/Banner/Banner';
 import Paragraph from '../../Components/Paragraph/Paragraph';
 import ProjectSection from '../../Components/ProjectSection/ProjectSection';
-import TechList from '../../Components/TechList/TechList';
+import TechListText from '../../Components/TechListText/TechListText';
 import './PuzzlePage.scss';
 
 export default function PuzzlePage (props) {
@@ -38,7 +38,7 @@ export default function PuzzlePage (props) {
                 <ProjectSection active={activeSection} code="des" title="Description" handleActivateSection={handleActivateSection}>
                     {description}
                     <div className="tech-name">Technologies Used</div>
-                    <TechList tech={tech} />
+                    <TechListText tech={tech} />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="obj" title="Objective" handleActivateSection={handleActivateSection}>
                     {objective}
