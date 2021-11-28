@@ -11,14 +11,12 @@ import './HomePage.scss';
 
 export default function HomePage (props) {
 
-    // const tech = ['Javascript', 'Typescript', 'Ruby', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
-    //               'D3', 'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
-    //               'PostgreSQL', 'Git/GitHub'];
+    
     const tech = {
         nodes: [
             { name: 'Javascript', category: 'language', level: 5 },
             { name: 'Typescript', category: 'language', level: 3 },
-            { name: 'Ruby', category: 'language', level: 3 },
+            { name: 'Ruby', category: 'language', level: 2 },
             { name: 'Python', category: 'language', level: 2 },
             { name: 'HTML', category: 'style', level: 5 },
             { name: 'CSS', category: 'style', level: 5 },
@@ -32,7 +30,7 @@ export default function HomePage (props) {
             { name: 'Node', category: 'other', level: 4 },
             { name: 'RESTful APIs', category: 'other', level: 5 },
             { name: 'Git/GitHub', category: 'other', level: 4 },
-            { name: 'Data Visualization', category: 'other', level: 3 }
+            { name: 'Data Visualization', category: 'other', level: 4 }
         ]
     }
 
@@ -71,7 +69,7 @@ export default function HomePage (props) {
 
     return (
         <div className="homepage-container">
-            <Banner main="John Teckemeyer" sub="Full Stack Web Development" />
+            <Banner main="John Teckemeyer" sub="Full Stack Web Developer" />
             <ContentContainer>
                 <div className="section-wrapper">
                     <ProfileImage />

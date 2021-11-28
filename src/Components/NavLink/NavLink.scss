@@ -40,3 +40,9 @@
   font-weight: 700;
   transition: all 200ms linear;
 }
+
+@media (max-width: 500px) {
+  .link-text {
+    font-size: $medium-text;
+  }
+}
