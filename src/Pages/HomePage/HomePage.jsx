@@ -11,9 +11,30 @@ import './HomePage.scss';
 
 export default function HomePage (props) {
 
-    const tech = ['Javascript', 'Typescript', 'Ruby', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
-                  'D3', 'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
-                  'PostgreSQL', 'Git/GitHub'];
+    // const tech = ['Javascript', 'Typescript', 'Ruby', 'Python', 'C#', 'HTML', 'CSS', 'Sass', 
+    //               'D3', 'jQuery', 'React', 'Express', 'Node', 'Django', 'RESTful APIs', 'MongoDB',
+    //               'PostgreSQL', 'Git/GitHub'];
+    const tech = {
+        nodes: [
+            { name: 'Javascript', category: 'language', level: 5 },
+            { name: 'Typescript', category: 'language', level: 3 },
+            { name: 'Ruby', category: 'language', level: 3 },
+            { name: 'Python', category: 'language', level: 2 },
+            { name: 'HTML', category: 'style', level: 5 },
+            { name: 'CSS', category: 'style', level: 5 },
+            { name: 'Sass', category: 'library', level: 5 },
+            { name: 'React', category: 'framework', level: 5 },
+            { name: 'Express', category: 'framework', level: 4 },
+            { name: 'Django', category: 'framework', level: 1 },
+            { name: 'MongoDB', category: 'database', level: 4 },
+            { name: 'PostgreSQL', category: 'database', level: 1 },
+            { name: 'D3', category: 'library', level: 4 },
+            { name: 'Node', category: 'other', level: 4 },
+            { name: 'RESTful APIs', category: 'other', level: 5 },
+            { name: 'Git/GitHub', category: 'other', level: 4 },
+            { name: 'Data Visualization', category: 'other', level: 3 }
+        ]
+    }
 
     const projects = {
         zipWeather: {
