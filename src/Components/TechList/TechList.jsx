@@ -52,25 +52,42 @@ export default function BubbleChart ({ tech }) {
             .attr('r', d => d.level * 7 + 40)
             .attr('fill', d => colors[d.category])
 
-        circles
+        textAndNodes
             .on('mouseover', handleMouseOver)
             .on('mouseout', handleMouseOut)
 
         function handleMouseOver (d) {
             d3.select(this)
+                .select('circle')
                 .attr('transform', 'scale(1.3)')
                 .attr('opacity', 0.6)
                 .attr('stroke', 'white')
                 .attr('stroke-width', 2)
+                .select('text')
+            
+            d3.select(this)
+                .select('text')
+                    .classed('selected-bubble', true)
+            
+            d3.select(this)
+                .select('.skill-bubble-level')
+                    .style('opacity', 1)
         }
 
         function handleMouseOut (d) {
             d3.select(this)
+                .select('circle')
                 .attr('transform', 'scale(1)')
                 .attr('opacity', 1)
                 .attr('stroke-width', 0)
+            
+            d3.select(this)
                 .select('text')
-                    .attr('font', '30px')
+                    .classed('selected-bubble', false)
+            
+            d3.select(this)
+                .select('.skill-bubble-level')
+                    .style('opacity', 0)
         }
 
         let texts = textAndNodes
@@ -78,6 +95,20 @@ export default function BubbleChart ({ tech }) {
             .attr('text-anchor', 'middle')
             .attr('alignment-baseline', 'central')
             .text(d => d.name)
+        
+        let levels = textAndNodes
+            .append('text')
+            .attr('class', 'skill-bubble-level')
+            .attr('text-anchor', 'middle')
+            .attr('alignment-baseline', 'central')
+            .style('opacity', 0)
+            .text(d => {
+                let output = '';
+                for (let i = 0; i < d.level; i++) {
+                    output += '*'
+                }
+                return output;
+            })
         
         function ticked () {
             textAndNodes

@@ -16,6 +16,18 @@ text {
   fill: white;
   pointer-events: none;
   font-size: 14px;
+  transition: font-size 150ms linear;
+}
+
+.selected-bubble {
+  font-size: 20px;
+  opacity: 1;
+}
+
+.skill-bubble-level {
+  transform: translateY(30px);
+  font-size: $big-text;
+  transition: opacity 150ms linear;
 }
 
 circle {
