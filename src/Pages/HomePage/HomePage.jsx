@@ -36,6 +36,12 @@ export default function HomePage (props) {
     }
 
     const projects = {
+        fireside: {
+            name: "Fireside",
+            image: "fullscreenhome.png",
+            link: "/fireside",
+            alt: "Making Intergenerational Connections"
+        },
         zipWeather: {
             name: "Zip Weather",
             image: "zipweather.png",
@@ -93,6 +99,7 @@ export default function HomePage (props) {
             <h1>Projects</h1>
             <ContentContainer>
                 <div className="section-wrapper projects-wrapper">
+                    <ProjectLink project={projects["fireside"]} />
                     <ProjectLink project={projects["zipWeather"]} />
                     <ProjectLink project={projects["sheetmusic"]} />
                     <ProjectLink project={projects["ouralley"]} />
