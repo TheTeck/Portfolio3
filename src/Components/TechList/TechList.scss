@@ -9,6 +9,7 @@
   border-bottom: 4px solid $primary-color;
   position: relative;
   overflow: hidden;
+  background: radial-gradient($primary-color-alpha, $secondary-color-alpha 60%);
 }
 
 text {
