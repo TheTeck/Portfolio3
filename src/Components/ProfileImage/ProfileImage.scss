@@ -2,11 +2,14 @@
 @import "../../Scss/fonts";
 
 #profileimage-container {
-  width: 240px;
+  width: 320px;
   height: 320px;
   display: none;
   background-color: $primary-color;
   color: $text-light;
+  border-radius: 50%;
+  border: 3px solid white;
+  outline: 5px solid $primary-color;
 
   img {
     width: 320px;
