@@ -57,6 +57,9 @@ export default function BubbleChart ({ tech }) {
             .on('mouseout', handleMouseOut)
 
         function handleMouseOver (d) {
+
+            this.parentNode.appendChild(this);
+
             d3.select(this)
                 .select('circle')
                 .attr('transform', 'scale(1.3)')
