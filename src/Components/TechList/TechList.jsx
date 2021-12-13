@@ -62,11 +62,10 @@ export default function BubbleChart ({ tech }) {
 
             d3.select(this)
                 .select('circle')
-                .attr('transform', 'scale(1.3)')
-                .attr('opacity', 0.6)
-                .attr('stroke', 'white')
-                .attr('stroke-width', 2)
-                .select('text')
+                        .attr('transform', 'scale(1.3)')
+                        .attr('opacity', 0.6)
+                        .attr('stroke', 'white')
+                        .attr('stroke-width', 2)
             
             d3.select(this)
                 .select('text')
