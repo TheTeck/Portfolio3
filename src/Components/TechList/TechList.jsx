@@ -18,7 +18,7 @@ const colors = {
 export default function BubbleChart ({ tech }) {
 
     const svgRef = useRef();
-    const [data, setData] = useState(tech);
+    const [data] = useState(tech);
 
     useEffect(() => {
         let svg = d3.select(svgRef.current)
@@ -47,7 +47,7 @@ export default function BubbleChart ({ tech }) {
             .append('g')
             .call(drag)
         
-        let circles = textAndNodes
+        textAndNodes
             .append('circle')
             .attr('r', d => d.level * 7 + 40)
             .attr('fill', d => colors[d.category])
@@ -92,13 +92,13 @@ export default function BubbleChart ({ tech }) {
                     .style('opacity', 0)
         }
 
-        let texts = textAndNodes
+        textAndNodes
             .append('text')
             .attr('text-anchor', 'middle')
             .attr('alignment-baseline', 'central')
             .text(d => d.name)
         
-        let levels = textAndNodes
+        textAndNodes
             .append('text')
             .attr('class', 'skill-bubble-level')
             .attr('text-anchor', 'middle')
@@ -135,7 +135,7 @@ export default function BubbleChart ({ tech }) {
 
             return () => svg.remove();
         }
-     }, [])
+     })
     
     return (
         <div id="tech-container">
