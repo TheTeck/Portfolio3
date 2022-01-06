@@ -9,7 +9,7 @@
   color: $text-light;
   border-radius: 50%;
   border: 3px solid white;
-  outline: 5px solid $primary-color;
+  box-shadow: 0 0 0 5px $primary-color;
 
   img {
     width: 320px;
