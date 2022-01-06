@@ -19,8 +19,8 @@ export default function SpaceXPage (props) {
 
     const tech = ['HTML', 'SCSS', 'Javascript', 'React', 'D3.js'];
 
-    const description = <Paragraph><strong>Fireside</strong> is an application created with the intention to bridge the age gap and create intergenerational friendships through direct communication.</Paragraph>
-    const objective = <Paragraph>This was the winning project for a hackathon which the prompt was to create an app that would help elderly people during the holidays. Fireside is an app that will give elderly people (who are often isolated and lonely) a safe space to connect to people of younger generations and share stores or ideas and build genuine, long-lasting relationships.</Paragraph>
+    const description = <Paragraph><strong>SpaceX Launches</strong> is an application that presents the launch data of SpaceX to the site visitor in an accessible and intuitive way. It also presents links for each launch to an image of that launch's patch, wikipedia entry and to a video recording on YouTube.</Paragraph>
+    const objective = <Paragraph>I created this application mainly to focus on my data visualization skills using D3.js. Taking data from a single API, I wanted to present it in different ways (types of charts) that would make most sense for each particular set of data.</Paragraph>
 
     function handleActivateSection (section) {
         if (activeSection === section) {
@@ -44,14 +44,13 @@ export default function SpaceXPage (props) {
                     {objective}
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="img" title="Images" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="firesidemobilehome.png" alt="Fireside landing page" />
-                    <img className="site-shot" src="onboardingshot3.png" alt="Select all wanted age groups" />
-                    <img className="site-shot" src="onboardingshot4.png" alt="What the user can offer" />
-                    <img className="site-shot" src="viewingmessages.png" alt="All messages between two users" />
+                    <img className="site-shot" src="launches.png" alt="SpaceX Launches landing page" />
+                    <img className="site-shot" src="launchdata1.png" alt="Pie chart showing makeup of launch customers and line graph showing launch frequency" />
+                    <img className="site-shot" src="launchdata2.png" alt="Bar graph showing the number of failed and successful launches each year" />
                 </ProjectSection>
                 <ProjectSection active={activeSection} code="cod" title="Code Highlights" handleActivateSection={handleActivateSection}>
-                    <img className="site-shot" src="datamodels.png" alt="Code showing the user schema"/>
-                    <Paragraph>The app is pretty simple and we only needed to make a user schema for the main data model. In it are a few nested schemas to model the data found in the user schema.</Paragraph>
+                    <img className="site-shot" src="piechart.png" alt="Code showing the creation of the ringed pie chart for the launch customers"/>
+                    <Paragraph>The portion of code shows the creation of the ringed pie chart for the launch customers. The data is first extracted into pieData and as each datum is iterated over, the shape of each segment is created with the d3.arc function. The color is simply a color fill with a d3 color interpolation function.</Paragraph>
                    </ProjectSection>               
             </ContentContainer>
         </div>
