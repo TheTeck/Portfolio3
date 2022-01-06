@@ -8,6 +8,7 @@ import OurAlleyPage from './Pages/OurAlleyPage/OurAlleyPage';
 import MinesweeperPage from './Pages/MinesweeperPage/MinesweeperPage';
 import WeatherPage from './Pages/WeatherPage/WeatherPage';
 import FiresidePage from './Pages/FiresidePage/FiresidePage';
+import SpaceXPage from './Pages/SpaceXPage/SpaceXPage';
 import './App.scss';
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route exact path="/fireside">
           <FiresidePage />
+        </Route>
+        <Route exact path="/spacex">
+          <SpaceXPage />
         </Route>
         <Route exact path="/">
           <HomePage />

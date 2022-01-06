@@ -38,6 +38,12 @@ export default function HomePage (props) {
     }
 
     const projects = {
+        spacex: {
+            name: "SpaceX Launches",
+            image: "launches.png",
+            link: "/spacex",
+            alt: "Visualized data resouce for all of the SpaceX launches through 2020"
+        },
         fireside: {
             name: "Fireside",
             image: "fullscreenhome.png",
@@ -101,6 +107,7 @@ export default function HomePage (props) {
             <h1>Projects</h1>
             <ContentContainer>
                 <div className="section-wrapper projects-wrapper">
+                    <ProjectLink project={projects["spacex"]} />
                     <ProjectLink project={projects["fireside"]} />
                     <ProjectLink project={projects["zipWeather"]} />
                     <ProjectLink project={projects["sheetmusic"]} />
