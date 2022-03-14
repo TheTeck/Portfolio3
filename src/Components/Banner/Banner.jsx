@@ -57,7 +57,7 @@ export default function Banner (props) {
     })
 
     return (
-        <div 
+        <header 
             className="banner-container"
             onMouseMove={handleCursorMovement}
             onMouseLeave={handleHideCursor}
@@ -82,6 +82,6 @@ export default function Banner (props) {
             }
 
             <BannerHeader main={props.main} sub={props.sub} />
-        </div>
+        </header>
     )
 }

@@ -4,8 +4,8 @@ import './ContentContainer.scss';
 
 export default function ContentContainer (props) {
     return (
-        <div className="content-container">
+        <section className="content-container">
             {props.children}
-        </div>
+        </section>
     )
 }
